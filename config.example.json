@@ -1,0 +1,12 @@
+{
+  "BASE_DIR": "wardrobe-captures",
+  "OUTPUT_BASE_DIR": "wardrobe-outputs",
+  "API_BASE": "http://127.0.0.1:8080/v1",
+  "MODEL": "你的新多模态模型名称.gguf",
+  "MIN_EXPECTED_COUNT": 5,
+  "TIMEOUT": 60,
+  "IMAGE_EXTS": [".png", ".jpg", ".jpeg", ".webp", ".bmp"],
+  "HIGH_PRIORITY": ["袜子", "饰品"],
+  "LOW_PRIORITY": ["下装", "鞋子", "妆容"],
+  "LOG_FILE_NAME": "数据清洗及错误盘点.md"
+}

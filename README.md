@@ -22,4 +22,16 @@
 - **本地大模型模式 (Local LLM)**：需本地安装并运行大模型（如通过 `llama.cpp` 运行）。**建议 Apple Silicon (M1/M2/M3/M4) 或有独立显卡的用户使用。**
 - **在线 API 模式 (Cloud API)**：*(规划中)* 支持配置第三方大模型 API（如 DeepSeek, OpenAI 等），无需本地显卡，低成本高速度。
 
+### 3. 配置文件（可选）
+本项目支持在根目录放置 `config.json` 来覆盖默认设置。你可以直接复制 `config.example.json` 并修改以下参数：
+- `BASE_DIR`: 要扫描的截图目录
+- `OUTPUT_BASE_DIR`: 输出结果和日志目录
+- `API_BASE`: 大模型后端地址
+- `MODEL`: 模型名称或路径
+- `MIN_EXPECTED_COUNT`: 单张图片判断为有效结果的最小编号数量
+- `TIMEOUT`: API 请求超时时长（秒）
+- `IMAGE_EXTS`: 支持的图片扩展名列表
+- `HIGH_PRIORITY`: 优先处理的目录类别（第一批处理）
+- `LOW_PRIORITY`: 次优先处理的目录类别（最后处理）
+
 ---
